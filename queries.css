@@ -1,0 +1,169 @@
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+/*<1095px*/ /*1095px/16=68.4rem*/
+@media (max-width:68.4rem){
+    
+html {font-size:93.75%;}
+
+   /* FOCUS AREA IMAGE */
+  .focus-area img{
+    width: 90%;
+  }
+}
+
+/*<973px*/ /*973px/16=60,8rem*/
+@media (max-width:60.8rem){
+
+    /* HOW IT WORKS */
+  .steps{
+    grid-template-columns: 2fr 2fr;
+  }
+
+   /* FOCUS AREA IMAGE */
+  .focus-area img{
+    width: 90%;
+  }
+
+  .why-vendors{
+    padding-bottom: 30px;
+  }
+
+   .card{grid-template-columns: 2fr 2fr;
+  }
+}
+
+/*768px*/
+@media (max-width: 48rem){
+
+  html {font-size:87.5%;}
+
+  /* NAVBAR */
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+  nav a{
+    margin: 0;
+  }
+
+  /* HERO */
+  .hero{
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero p{
+  /*16px/16=1rem*/
+    margin-top: 15px;
+  }
+
+  .hero-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 25px;
+  }
+
+  .hero-buttons .btn{
+    width: 70%;
+    text-align: center;
+    align-self: center;
+    border-radius: 7px;
+  }
+
+  /* SPLIT SECTION */
+  .split{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .split .card{
+    width: 80%;
+  }
+
+  /* EVENT TYPES */
+  .event-grid{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card{
+    width: 280px;
+  }
+
+  .event-card img{
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* HOW IT WORKS */
+  .steps{
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  /* FOCUS AREA IMAGE */
+  .focus-area img{
+    width: 85%;
+    margin: 0;
+  }
+
+  /* CTA BUTTONS */
+  .cta-section .hero-buttons{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-section .btn{
+    width: 70%;
+    text-align: center;
+  }
+
+  .why-vendors{
+    padding-bottom: 20px;
+  }
+
+.steps {
+    grid-template-columns: 1fr;
+  }
+
+   .service-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .service-card{
+        width: 90% ;
+        max-width: 280px
+  }
+
+
+    .service-card img{
+    height: 220px;
+    object-fit: cover;
+  }
+
+}
+/*590px*/
+@media (max-width:36.8rem){
+
+  html {font-size: 81.25%;}
+}

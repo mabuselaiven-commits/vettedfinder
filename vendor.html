@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VettedFinder helps you find trusted event vendors and hire inventory for weddings, funerals, parties and more in South Africa.">
+  <title>requestform | VettedFinder</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="queries.css">
+</head>
+
+
+<body>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="queries.css">
+<header class="navbar">
+  <div class="logo">VETTED<span>FINDER</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="inventory.html">Hire Inventory</a>
+  </nav>
+</header>
+
+<section class="events">
+  <h2 id="vendorTitle">Vendor</h2>
+
+  <!-- ✅ PASTE FORM HERE -->
+  <div class="request-form">
+    <h3>Request This Service</h3>
+
+    <input type="text" id="service" value="Catering" readonly>
+<input type="text" id="vendorId" value="V#1" readonly>
+
+    <input type="date" id="date">
+    <input type="text" id="location" placeholder="Event Location">
+    <input type="number" id="people" placeholder="Number of People">
+    <textarea id="notes" placeholder="Extra details"></textarea>
+
+    <button onclick="sendToWhatsApp()" class="btn primary">
+      Send Request on WhatsApp
+    </button>
+  </div>
+
+</section>
+<script>
+function sendToWhatsApp() {
+  let service = document.getElementById("service").value;
+  let vendor = document.getElementById("vendor").value;
+  let date = document.getElementById("date").value;
+  let location = document.getElementById("location").value;
+  let people = document.getElementById("people").value;
+  let notes = document.getElementById("notes").value;
+
+  let phoneNumber = "27695394846"; // replace with your number
+
+  let message = `Hi, I would like to request a service.
+
+Service: ${service}
+Vendor: ${vendor}
+Date: ${date}
+Location: ${location}
+People: ${people}
+Details: ${notes}`;
+
+  let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+}
+</script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  const service = params.get("service");
+  const id = params.get("id");
+
+  if (service) {
+    document.getElementById("service").value = service;
+  }
+
+  if (id) {
+    document.getElementById("vendorId").value = id;
+  }
+</script>
+
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 VettedFinder</p>
+</footer>
+
+</body>
+</html>

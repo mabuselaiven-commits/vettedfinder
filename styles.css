@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html{
+  font-size: 100%;
+  /* 10px / 16px x 100 = 62.5% */
+}
+body {
+  background: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+}
+
+.logo span {
+  color: #009BB4;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.cta {
+  background: #009BB4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+}
+
+/* HERO */
+.hero {
+  background: #009BB4;
+  color: white;
+  padding: 80px 50px;
+}
+
+.hero span {
+  color: #f4f4f4;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.primary {
+  background: white;
+  color: #009BB4;
+}
+
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+/* SPLIT */
+.split {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 40%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+/* EVENTS */
+.events {
+  text-align: center;
+  padding: 40px;
+}
+
+.event-card {
+  width: 200px;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  padding: 40px;
+  background: #009BB4;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+.card .btn {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* VENDOR PAGE FORM STYLING */
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+
+  background: white;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.request-form h3 {
+  text-align: center;
+  color: #009BB4;
+}
+
+.request-form input,
+.request-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.request-form textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* Button improvement */
+.request-form .btn {
+  background: #009BB4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.request-form .btn:hover {
+  opacity: 0.9;
+}
+/* VENDOR PAGE */
+
+.vendors {
+  padding: 40px;
+  text-align: center;
+}
+
+.vendors h2 {
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.vendor-card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* IMAGE */
+.vendor-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* TEXT */
+.vendor-card h3 {
+  margin-top: 10px;
+}
+
+.vendor-id {
+  color: gray;
+  font-size: 13px;
+}
+
+/* BUTTON */
+.vendor-card .btn {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.event-card img {
+  width: 100%;
+  height: 200px;       /* 👈 controls height */
+  object-fit: cover;   /* 👈 crops image nicely */
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.focus-area {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.focus-area h2 {
+  margin-bottom: 10px;
+}
+
+.focus-area p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.focus-area img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works {
+  padding: 50px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.how-it-works h2 {
+  margin-bottom: 30px;
+}
+
+/* STEPS GRID */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* EACH STEP */
+.step {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.step h3 {
+  color: #009BB4;
+  margin-bottom: 10px;
+}
+
+/* IMAGE GALLERY */
+.vendor-images {
+  display: flex;
+  gap: 5px;
+}
+
+.vendor-images img {
+  width: 50%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* RATING */
+.rating {
+  color: #f4b400; /* gold stars */
+  font-size: 14px;
+}
+
+/* PRICE */
+.price {
+  color: #009BB4;
+  font-weight: bold;
+}
+
+/* INVENTORY PAGE */
+
+.events{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.events h1{
+    margin-bottom: 10px;
+    color: #009BB4;
+}
+
+.events p{
+    color: #666;
+}
+
+/* GRID */
+
+.event-grid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* CARD */
+
+.card{
+    background: white;
+    width: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* CARD IMAGES */
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* CARD TEXT */
+
+.card h3{
+    margin-top: 15px;
+}
+
+.card p{
+    padding: 10px 20px;
+    color: #555;
+}
+
+/* BUTTON */
+
+.card a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #009BB4;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+/* POPUP */
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-content{
+    background: white;
+    width: 90%;
+    max-width: 400px;
+
+    padding: 30px;
+    border-radius: 16px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.popup-content h2{
+    color: #009BB4;
+    margin-bottom: 15px;
+}
+
+.popup-content p{
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* CLOSE BUTTON */
+
+.close-btn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* BUTTON */
+
+.popup-btn{
+    display: inline-block;
+
+    background: #009BB4;
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+.vendor-grid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+.vendor-card{
+    width: 280px;
+    background: white;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.vendor-images{
+    display: flex;
+    gap: 10px;
+}
+
+.vendor-images img{
+    width: 50%;
+    height: 180px;
+
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vendor-card .btn{
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background: #00a8c6;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    width: 80%;
+
+    box-sizing: border-box;
+}
+
+.vendor-card{
+    overflow: hidden;
+}
+
+/* WHY US SECTION */
+
+.why-us{
+    background: white;
+
+    padding: 40px 20px;
+    padding-bottom: 20px;
+
+    text-align: auto;
+}
+
+.why-us h2{
+    color: #777;
+
+    margin-bottom: 10px;
+}
+
+.why-us p{
+    max-width: 900px;
+
+    margin: 0;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+/* WHY VENDORS SECTION */
+
+.why-vendors{
+    background: white;
+
+    padding: 0px 20px;
+
+    text-align: auto;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.why-vendors h2{
+     margin-bottom: 10px;
+    color: #777;
+}
+
+.why-vendors p{
+    max-width: 900px;
+
+    margin: 0;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.why-vendors .btn{
+    background: #777;
+    color: white;
+
+    padding: 5px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+/* SERVICES GRID */
+
+.service-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* SERVICE CARDS */
+
+.service-card{
+    width: 90%;
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.service-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card{
+    background: white;
+    width: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.service-card:hover{
+    transform: translateY(-5px);
+}
+
+/* CARD IMAGES */
+
+.service-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* CARD TEXT */
+
+.service-card h3{
+    margin-top: 15px;
+}
+
+.service-card p{
+    padding: 10px 20px;
+    color: #555;
+}
+
+/* BUTTON */
+
+.service-card a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #009BB4;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;}

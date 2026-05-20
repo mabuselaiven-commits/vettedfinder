@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VettedFinder helps you find trusted event vendors and hire inventory for weddings, funerals, parties and more in South Africa.">
+  <title>Hire Inventory | VettedFinder</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="queries.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">VETTED<span>FINDER</span></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="inventory.html">Hire Inventory</a>
+  </nav>
+</header>
+
+<section class="events">
+
+  <h1>Hire Event Inventory</h1>
+  <p>Select inventory category</p>
+
+  <div class="event-grid">
+
+    <!-- TENTS -->
+    <div class="card">
+      <img src="images/tent.jpg" alt="Tent Hire">
+
+      <h3>Tents</h3>
+
+      <p>Marquee tents for weddings, funerals and parties</p>
+
+      <a href="#" onclick="showMessage()">View Inventory</a>
+    </div>
+
+    <!-- CHAIRS -->
+    <div class="card">
+      <img src="images/chairs.jpg" alt="Chair Hire">
+
+      <h3>Chairs</h3>
+
+      <p>Plastic, Tiffany and event chairs</p>
+
+      <a href="#" onclick="showMessage()">View Inventory</a>
+    </div>
+
+    <!-- MOBILE TOILETS -->
+    <div class="card">
+      <img src="images/toilet.jpg" alt="Mobile Toilets">
+
+      <h3>Mobile Toilets</h3>
+
+      <p>Portable toilets for outdoor events</p>
+
+      <a href="#" onclick="showMessage()">View Inventory</a>
+    </div>
+
+    <!-- MOBILE FRIDGES -->
+    <div class="card">
+      <img src="images/fridge.jpg" alt="Mobile Fridges">
+
+      <h3>Mobile Fridges</h3>
+
+      <p>Cold storage and beverage cooling</p>
+
+      <a href="#" onclick="showMessage()">View Inventory</a>
+    </div>
+
+    <!-- JUMPING CASTLES -->
+    <div class="card">
+      <img src="images/castle.jpg" alt="Jumping Castles">
+
+      <h3>Jumping Castles</h3>
+
+      <p>Kids entertainment for parties and birthdays</p>
+
+      <a href="#" onclick="showMessage()">View Inventory</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- POPUP -->
+
+<div id="popup" class="popup">
+
+  <div class="popup-content">
+
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+
+    <h2>Inventory Coming Soon</h2>
+
+    <p>
+      We are currently onboarding trusted inventory providers.
+      Listings will be available soon.
+    </p>
+
+    <a href="https://wa.me/27695394846" target="_blank" class="popup-btn">
+      Join as Inventory Provider
+    </a>
+
+  </div>
+
+</div>
+
+<script>
+
+function showMessage() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 VettedFinder</p>
+</footer>
+
+</body>
+</html>
