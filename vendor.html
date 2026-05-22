@@ -48,7 +48,7 @@
     <input type="number" id="people" placeholder="Number of People">
     <textarea id="notes" placeholder="Extra details"></textarea>
 
-    <button onclick="sendToWhatsApp()" class="btn primary">
+    <button onclick="showLaunchMessage()" class="btn primary">
       Send Request on WhatsApp
     </button>
   </div>
@@ -57,7 +57,7 @@
 <script>
 function sendToWhatsApp() {
   let service = document.getElementById("service").value;
-  let vendor = document.getElementById("vendor").value;
+  let vendor = document.getElementById("vendorId").value;
   let date = document.getElementById("date").value;
   let location = document.getElementById("location").value;
   let people = document.getElementById("people").value;
@@ -94,6 +94,30 @@ Details: ${notes}`;
     document.getElementById("vendorId").value = id;
   }
 </script>
+
+<script>
+function showLaunchMessage() {
+  document.getElementById("launchPopup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("launchPopup").style.display = "none";
+}
+</script>
+
+<div id="launchPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h3>🚧 Launch Phase</h3>
+    <p>
+      VettedFinder is not yet fully published.
+      Request features will be available soon.
+    </p>
+
+    <button onclick="closePopup()" class="btn primary">
+      Okay
+    </button>
+  </div>
+</div>
 
 
 <!-- FOOTER -->
