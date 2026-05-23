@@ -21,16 +21,31 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="navbar">
-  <div class="logo">VETTED<span>FINDER</span></div>
 
-  <nav>
+  <!-- LOGO -->
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="VettedFinder Logo">
+  </a>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="mobileMenu">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="https://wa.me/27695394846?text=Hi%20I%20want%20to%20join%20VettedFinder%20as%20a%20vendor.%20My%20service%20is:" 
-   class="btn primary" target="_blank">
-   Become a Vendor</a>
+
+    <a href="https://wa.me/27695394846?text=Hi%20I%20want%20to%20join%20VettedFinder%20as%20a%20vendor.%20My%20service%20is:"
+       class="btn primary"
+       target="_blank">
+       Become a Vendor
+    </a>
   </nav>
+
 </header>
 
 <section class="events">
@@ -138,6 +153,12 @@ function closePopup() {
 <footer>
   <p>© 2026 VettedFinder</p>
 </footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>

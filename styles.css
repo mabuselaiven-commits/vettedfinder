@@ -16,25 +16,37 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   padding: 20px;
   background: white;
+
+  position: relative;
 }
 
-.logo span {
-  color: #009BB4;
+/* LOGO IMAGE */
+.logo img {
+  height: 50px;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 nav a {
-  margin: 0 10px;
   text-decoration: none;
   color: black;
 }
 
-.cta {
-  background: #009BB4;
-  color: white;
-  border: none;
-  padding: 10px 15px;
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #009BB4;
 }
 
 /* HERO */
