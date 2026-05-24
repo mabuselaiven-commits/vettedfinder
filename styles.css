@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 10px;
+  padding: 8px;
   background: white;
 
   position: relative;
@@ -27,6 +27,7 @@ body {
 /* LOGO IMAGE */
 .logo img {
   height: 50px;
+  border-radius: 10px;
 }
 
 /* NAVIGATION */

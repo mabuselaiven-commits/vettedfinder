@@ -74,6 +74,18 @@ html {font-size:93.75%;}
   /* SHOW MENU WHEN ACTIVE */
   nav.active {
     display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+
   }
 
   nav a {
