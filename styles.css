@@ -26,7 +26,7 @@ body {
 
 /* LOGO IMAGE */
 .logo img {
-  height: 50px;
+  height: 35px;
   border-radius: 10px;
 }
 
@@ -47,7 +47,7 @@ nav a {
   display: none;
   font-size: 32px;
   cursor: pointer;
-  color: #009BB4;
+  color: black;
 }
 
 /* HERO */

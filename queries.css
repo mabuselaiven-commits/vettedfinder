@@ -85,6 +85,7 @@ html {font-size:93.75%;}
     align-items: flex-start;
     justify-content: flex-start;
     backdrop-filter: blur(10px);
+    font-size: 93%;
 
   }
 
@@ -199,4 +200,5 @@ html {font-size:93.75%;}
 @media (max-width:36.8rem){
 
   html {font-size: 81.25%;}
+  nav.active {font-size: 93%;}
 }
