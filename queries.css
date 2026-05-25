@@ -197,6 +197,11 @@ html {font-size:93.75%;}
     object-fit: cover;
   }
 
+  .slide-card{
+    min-width: 240px;
+    height: 180px;
+  }
+
 }
 /*590px*/
 @media (max-width:36.8rem){
