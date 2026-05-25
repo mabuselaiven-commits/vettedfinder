@@ -56,9 +56,15 @@
      <div class="vendor-card">
 
       <div class="vendor-images">
-        <img src="images/decor1.jpg">
-        <img src="images/decor2.jpg">
-      </div>
+
+  <img src="images/decor1.jpg">
+
+  <div class="more-images" onclick="openGallery('elegantDecor')">
+    <img src="images/decor2.jpg">
+    <span>+1</span>
+  </div>
+
+</div>
 
       <h3>Elegant Decor</h3>
 
@@ -103,6 +109,16 @@
   </div>
 </section>
 
+<!-- GALLERY MODAL -->
+
+<div id="galleryModal" class="gallery-modal">
+
+  <span class="close-gallery" onclick="closeGallery()">✕</span>
+
+  <div id="galleryImages"></div>
+
+</div>
+
 <!-- FOOTER -->
 <footer>
   <p>© 2026 VettedFinder</p>
@@ -112,6 +128,44 @@
 function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
 }
+</script>
+
+<script>
+
+const galleries = {
+
+  elegantDecor: [
+    "images/decor1.jpg",
+    "images/decor2.jpg",
+    "images/decor3.jpg",
+    "images/decor4.jpg",
+    "images/decor5.jpg"
+  ]
+
+};
+
+function openGallery(vendor){
+
+  const modal = document.getElementById("galleryModal");
+  const container = document.getElementById("galleryImages");
+
+  container.innerHTML = "";
+
+  galleries[vendor].forEach(image => {
+
+    container.innerHTML += `
+      <img src="${image}">
+    `;
+
+  });
+
+  modal.style.display = "flex";
+}
+
+function closeGallery(){
+  document.getElementById("galleryModal").style.display = "none";
+}
+
 </script>
 
 </body>
