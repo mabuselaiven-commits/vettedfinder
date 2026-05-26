@@ -166,11 +166,14 @@ nav a.active::after {
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
+
+.footer{
+    background: #111;
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 20px;
 }
 
 .card .btn {

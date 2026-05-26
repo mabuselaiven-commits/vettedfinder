@@ -202,6 +202,11 @@ html {font-size:93.75%;}
     height: 180px;
   }
 
+  .footer-content{
+    flex-direction: column;
+    gap: 30px;
+}
+
 }
 /*590px*/
 @media (max-width:36.8rem){
