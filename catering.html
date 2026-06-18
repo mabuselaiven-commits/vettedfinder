@@ -64,11 +64,8 @@
 
   <p class="vendor-id">Vendor ID: V#1</p>
 
-  <!-- ⭐ RATINGS -->
-  <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
-
   <!-- 💰 PRICING -->
-  <p class="price">From R80 per person</p>
+  <p class="price">From R6000</p>
 
   <p>weddings, funerals & parties</p>
 
@@ -90,13 +87,10 @@
 
   <p class="vendor-id">Vendor ID: V#2</p>
 
-  <!-- ⭐ RATINGS -->
-  <p class="rating">⭐⭐⭐⭐☆ (4.0)</p>
-
   <!-- 💰 PRICING -->
-  <p class="price">From R85 per person</p>
+  <p class="price">From R5500</p>
 
-  <p>Buffets, weddings & funerals</p>
+  <p>All kinds of events</p>
 
   <a href="vendor.html?service=Catering&id=V%232" class="btn primary">
   Request Service
@@ -116,11 +110,8 @@
 
   <p class="vendor-id">Vendor ID: V#3</p>
 
-  <!-- ⭐ RATINGS -->
-  <p class="rating">⭐⭐⭐⭐⭐(5.0)</p>
-
   <!-- 💰 PRICING -->
-  <p class="price">From R85 per person</p>
+  <p class="price">From R6200</p>
 
   <p>parties, weddings & funerals</p>
 
@@ -130,9 +121,51 @@
 
 </div>
 
+<div class="vendor-card">
+
+<div class="vendor-images">
+
+<img src="images/catering1v4.jpg">
+
+<div class="more-images"
+
+onclick="openGallery('ditauCatering')">
+
+<img src="images/catering2v4.jpg">
+
+<span>+3</span>
+
+</div>
+
+</div>
+
+  <h3>Ditau catering services</h3>
+
+  <p class="vendor-id">Vendor ID: V#4</p>
+
+  <!-- 💰 PRICING -->
+  <p class="price">From R6000</p>
+
+  <p>All kinds of events</p>
+
+  <a href="vendor.html?service=Catering&id=V%234" class="btn primary">
+  Request Service
+</a>
+
+</div>
+
+
 
   </div>
 </section>
+
+<div id="galleryModal" class="gallery-modal">
+
+  <span class="close-gallery" onclick="closeGallery()">✕</span>
+
+  <div id="galleryImages"></div>
+
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -144,6 +177,10 @@ function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
 }
 </script>
+
+<script src="gallery.js"></script>
+
+
 
 </body>
 </html>

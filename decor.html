@@ -70,9 +70,7 @@
 
       <p class="vendor-id">Vendor ID: VD#1</p>
 
-      <p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
-
-      <p class="price">From R2,000 setup</p>
+      <p class="price">From R90 per person</p>
 
       <p>weddings,funerals & parties</p>
 
@@ -93,9 +91,7 @@
 
       <p class="vendor-id">Vendor ID: VD#2</p>
 
-      <p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
-
-      <p class="price">From R1,900 setup</p>
+      <p class="price">From R80 per person</p>
 
       <p>party, weddings & funerals</p>
 
@@ -130,43 +126,7 @@ function toggleMenu() {
 }
 </script>
 
-<script>
-
-const galleries = {
-
-  elegantDecor: [
-    "images/decor1.jpg",
-    "images/decor2.jpg",
-    "images/decor3.jpg",
-    "images/decor4.jpg",
-    "images/decor5.jpg"
-  ]
-
-};
-
-function openGallery(vendor){
-
-  const modal = document.getElementById("galleryModal");
-  const container = document.getElementById("galleryImages");
-
-  container.innerHTML = "";
-
-  galleries[vendor].forEach(image => {
-
-    container.innerHTML += `
-      <img src="${image}">
-    `;
-
-  });
-
-  modal.style.display = "flex";
-}
-
-function closeGallery(){
-  document.getElementById("galleryModal").style.display = "none";
-}
-
-</script>
+<script src="gallery.js"></script>
 
 </body>
 </html>
